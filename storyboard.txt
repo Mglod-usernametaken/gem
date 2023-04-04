@@ -1,0 +1,77 @@
+		===Wstęp===
+[cutscene] [https://youtu.be/tE6fOsAc9FM]
+Listopad, 1933, późny wieczór, Hotel niedaleko Brooklyn Museum.
+Main Character (MC), prywatny detektyw, opowiada o swoim przyjacielu, Profesorze lingwistyki i archeologii, na którego właśnie czeka. Profesor John Hammond wraca właśnie do Nowego Jorku z rocznej wyprawy badawczej w Afryce. W przyszłym tygodniu rozpocząć się ma wystawa znalezionych przez niego artefaktów w Brooklyn Museum.
+MC czeka na przyjazd profesora w loży hotelowej - 10 minut temu miał przyjechać taksówką z dworca kolejowego.
+MC spostrzega jakiś ruch na ulicy po drugiej stronie - w pierwszej chwili myśli, że to biedne dzieciaki z okolicy robią graffiti; wychodzi przed hotel by je przegonić, ale w tym momencie zauważa jak z taksówki 30m dalej wysiada John. Wtem, barczysta postać w długim płaszczu wpada na profesora, słychać strzał, a postać ucieka z walizką profesora.
+
+cut, staramy się zatamować krwawienie, John umierając wręcza nam zza pazuchy swój dzienniki /kamienną tabliczkę/. "Wszystkie odpowiedzi są tutaj, nie możesz pozwolić by /Oni/ dostali tabliczkę".
+
+cut, następny dzień, widzimy mapę miasta, voiceover trwa dalej
+
+		===mapa miasta===
+przed nami uproszczona mapka NYC, po której możemy się poruszać ikonką czarnego Chevroleta Eagle.
+na mapie zaznaczone lokacje:
+-Brooklyn Museum
+-Komisariat Policji
+-Central Park
+-The Morgan Library & Museum
+-{na początku niewidoczny} Zamknięty Teatr niedaleko portu
+-(jeszcze z 2 lokalizacje)
+
+na dole ekranu hint:
+"powinienem zajrzeć do biblioteki i rozszyfrować /kamienną tabliczkę/"
+(z czasem zmienić)
+*
+------------------
+przy wejściu w każdą lokację odpala nam się cutscenka z paragrafem z Dziennika Johna
+------------------
+
+		==lokacje==
+	=Brooklyn Museum=
+ekran z pracownikiem muzeum na tle wystawy w przygotowaniu, nagłówek-wypowiedź pracownika w stylu:
+"jestem zajęty, jak mam ci coś powiedzieć, pomóż mi z tym:"
+[obliczamy jakiś szajs zadany przez pracownika. za każde rozwiązanie dostajemy skrawek podpowiedzi, za błędy gość się wkurza i przestaje nam odpowiadać, tylko mówi że jest zajęty i wypierdalać.] 
+podpowiedzi:
+- wystawa dotyczy plemienia Dogonów
+- to afrykańskie plemię czciło gwiazdę Syriusz
+- Profesor miał przywieźć kryształowy posążek (!)
+- straszliwie bali się Oceanu, ale z Syriuszem byli bezpieczni
+- posługiwali się systemem szesnastkowym
+
+	=Komisariat Policji=
+żeby uzyskać informację trzeba się przebić przez tonę biurokracji:
+[jakieś proste, ale nudne zadanko]
+informacje do zdobycia:
+- nie złapano sprawcy
+- na miejscu zbrodni znaleziono świeże graffiti /obrazek/
+- podejrzana jest jakaś organizacja związana z tym symbolem /obrazek/
+- ta sama organizacja wykradła niedawno z muzeum rytualny sztylet 
+- podobno można ich czasami spotkać w pewnym miejscu: dostajemy pierwszą współrzędną 
+
+	=The Morgan Library=
+[proste zadanko na znalezienie pomocnej książki]
+[dowiadujemy się, że Dogonowie wierzyli, że koniec świata nadejdzie z dna Oceanów]
+po znalezieniu książki widzimy Tabliczkę i metodę rozwiązania
+
+[rozwiązaniem 1. części jest info o Końcu Świata i posążku]
+[rozwiązaniem 2. części jest info o Przyzwaniu Przedwiecznego]
+[trzeczie rozwiązanie odblokowuje drugą współrzędną]
+
+po rozwiązaniu trzeciej części ktoś nam kradnie tabliczkę
+scena pościgu [ucieka z tabliczką/odzyskujemy tabliczkę i znajdujemy symbol kultystów, cutscenka z dziennika]
+
+
+	=Zamknięty teatr niedaleko Portu=
+[żeby wejść musimy złamać szyfr(policzyć kombinacje,czy coś)]
+- w środku kultyści, ołtarz Cthulhu, na nim zielony, kryształowy posążek
+- widok labiryntu
+żeby dojść do posążku i ew. tabliczki musimy rozwiązać jakieś równanie (pułapka w labiryncie?)
+- od wejścia na ekranie mamy klepsydrę, jak się przesypie, to cutscenka z przyzwaniem Wielkiego Cthulhu, koniec gry.
+
+jak zdobędziemy posążek przed czasem, to koniec gry, wbija policja i zatrzymuje kultystów.
+
+
+		===Scena Pościgu===
+poruszamy się po mapce i my i "przeciwnik". my jesteśmy szybsi, ale co parę kroków musimy rozwiązać bardzo proste zadanie matematyczne, przez co cel może nam uciec za kraniec planszy, wtedy /marny koniec/
+jak dogoni, to koniec pościgu.

@@ -1,0 +1,22 @@
+
+=== MINIMUM VIABLE PRODUCT ===
+
+
+[mapa] prostokątny ekran z liniami do poruszania się (niczym pacman w labiryncie)
+[zmiana sceny] po dotarciu na X ekran przełącza się
+[zagadka] na ekranie pojawia się obrazek i pole do wpisania odpowiedzi
+[rozwiązanie] po wpisaniu 123 przenosi nas na trzeci ekran.
+
+
+= potrzebne mechaniki: =
+
+poruszanie blokiem - input z klawiatury
+trasa
+collision detection
+interrupt zmieniający ekran
+import obrazka do pokazania
+pole pozwalające na input
+wyświetlanie inputu w czasie rzeczywistym
+walidacja inputu
+przejście na następny ekran (interrupt + walidacja?)
+
