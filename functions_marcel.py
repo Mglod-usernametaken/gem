@@ -16,14 +16,19 @@ screen.fill('#3b3d40')
 background = pygame.Surface((1440,800))
 background = pygame.image.load('sprites/test.png').convert()
 
+background2 = pygame.Surface((1440,800))
+background2 = pygame.image.load('sprites/test2.png').convert()
+
 banner_surf = pygame.image.load('sprites/test-banner.png').convert_alpha()
 banner_rect = banner_surf.get_rect(topleft = (270,700))
 
 player_surf = pygame.image.load('sprites/character.png').convert_alpha()
 player_rect = player_surf.get_rect(topleft= (270,200))
 
-
-
+base_font = pygame.font.Font(None,64)
+user_text = 'enter text'
+text_surf = base_font.render(user_text,True,(255,0,255))
+text_rect = text_surf.get_rect(center = (720,750))
 game_state = 0
 
 
