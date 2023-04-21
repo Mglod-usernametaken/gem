@@ -16,13 +16,11 @@ screen.fill('#3b3d40')
 background = pygame.Surface((1440,800))
 background = pygame.image.load('sprites/test.png').convert()
 
-banner = pygame.Surface((900,200))
-banner = pygame.image.load('sprites/test-banner.png').convert_alpha()
-# banner_y_pos = 700
+banner_surf = pygame.image.load('sprites/test-banner.png').convert_alpha()
+banner_rect = banner_surf.get_rect(topleft = (270,700))
 
-player_surface = pygame.image.load('sprites/character.png').convert_alpha()
-
-# text_surface = test_font.render('this text is rendered by pygame', True, 'crimson')
+player_surf = pygame.image.load('sprites/character.png').convert_alpha()
+player_rect = player_surf.get_rect(topleft= (270,200))
 
 
 
@@ -33,7 +31,8 @@ def playmovie(video_path):
     movie = moviepy.editor.VideoFileClip(video_path)
     movie.preview()
 
-def banner_move():
-    banner_y_pos -=1
-    if banner_y_pos <= -200:
-        banner_y_pos = 900
+def banner_move2():
+    banner_rect.top -=1
+    if banner_rect.top <= -200:
+        banner_rect.top = 900
+
