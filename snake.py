@@ -16,9 +16,9 @@ red = (255, 0, 0)
 food_amount = 3
 
 # Set up the snake block size and speed
-block_size = 20
+block_size = 32
 clock = pygame.time.Clock()
-snake_speed = 30
+snake_speed = 10
 
 # Set up the font for the score display
 font = pygame.font.SysFont(None, 25)
@@ -33,7 +33,9 @@ def score(score):
 def math_question(first_num, second_num, operator):
     text = font.render(str(first_num) + " " + operator + " " + str(second_num) + " = ?", True, black)
     game_display.blit(text, [0, 20])
+#---------------------------------------------------------
 
+#---------------------------------------------------------
 # Define the main game loop
 def game_loop():
     game_over = False
