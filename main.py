@@ -5,6 +5,9 @@ import moviepy.editor
 
 pygame.init()
 
+
+banner_y_pos = 700
+
 #main loop
 run = True
 while run:
@@ -22,6 +25,8 @@ while run:
     banner_y_pos -= 1
     if banner_y_pos <= -200:
         banner_y_pos = 900
+
+    screen.blit(player_surface,(100,200))
 
     pygame.display.update()
     clock.tick(60)
