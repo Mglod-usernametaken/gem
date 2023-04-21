@@ -1,23 +1,16 @@
 import pygame
 import sys
+from gra_functions import *
+# import moviepy.editor
 
 # Inicjalizacja pygame
 pygame.init()
+clock = pygame.time.Clock()
 
-# Ustawienia okna
-window_width = 800
-window_height = 600
-window = pygame.display.set_mode((window_width, window_height))
-pygame.display.set_caption("Gra")
-
-# Ustawienia bloku
-block_size = 50
-block_x = 375
-block_y = 450
-block_speed = 30
-
-# Ustawienia przeszkód
-obstacles = [(150, 300, 100, 50), (550, 200, 50, 100), (300, 100, 50, 300)]
+# surfaces
+window.fill(('#3b3d40'))
+background = pygame.Surface((1440,800))
+background = pygame.image.load('sprites/test.png')
 
 # Ustawienia zagadki
 puzzle_answer = ""
@@ -30,25 +23,6 @@ puzzle_active = False
 
 # Stan gry
 game_state = 0
-
-
-def draw():
-    # Wyczyszczenie ekranu
-    window.fill((0, 0, 0))
-
-    # Rysowanie bloku
-    pygame.draw.rect(window, (255, 0, 0), (block_x, block_y, block_size, block_size))
-
-    # Rysowanie przeszkód
-    for obstacle in obstacles:
-        pygame.draw.rect(window, (255, 255, 255), obstacle)
-
-    # Rysowanie zagadki
-    if game_state == 1:
-        pygame.draw.rect(window, (255, 255, 255), puzzle_input_rect, 2)
-        puzzle_input_text = puzzle_font.render(puzzle_answer, True, (255, 255, 255))
-        window.blit(puzzle_input_text, (puzzle_input_rect.x + 10, puzzle_input_rect.y + 10))
-        window.blit(puzzle_text, puzzle_text_rect)
 
 
 # Główna pętla gry
@@ -77,6 +51,7 @@ while True:
                     obstacle_rect = pygame.Rect(obstacle)
                     if block_rect.colliderect(obstacle_rect):
                         print("Kolizja!")
+                        playmovie('sound/test.mp4')
 
             elif game_state == 1:
                 # Wprowadzanie odpowiedzi
@@ -114,4 +89,4 @@ while True:
 
         # Odświeżenie ekranu
         pygame.display.update()
-        pygame.time.Clock().tick(60)
+        clock.tick(60)
