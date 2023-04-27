@@ -10,13 +10,13 @@
 
 = potrzebne mechaniki: =
 
-poruszanie blokiem - input z klawiatury
+#poruszanie blokiem - input z klawiatury
 trasa
-collision detection
-interrupt zmieniający ekran
-import obrazka do pokazania
+#collision detection
+#interrupt zmieniający ekran
+#import obrazka do pokazania
 pole pozwalające na input
-wyświetlanie inputu w czasie rzeczywistym
-walidacja inputu
-przejście na następny ekran (interrupt + walidacja?)
+#wyświetlanie inputu w czasie rzeczywistym
+#walidacja inputu
+#przejście na następny ekran (interrupt + walidacja?)
 

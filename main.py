@@ -5,7 +5,6 @@ import moviepy.editor
 
 pygame.init()
 banner_y_pos = 700
-step = 10
 
 
 #main loop
@@ -14,19 +13,14 @@ while run:
     
     # event handler
     for event in pygame.event.get():
-        #quit game
+
+        # quit game
         if event.type == pygame.QUIT:
             run = False
+
         if game_state ==0:
-            if event.type == pygame.KEYDOWN: # to można napisać jako funkcję
-                if event.key == pygame.K_LEFT:
-                    player_rect.left -= step
-                if event.key == pygame.K_RIGHT:
-                    player_rect.right += step
-                if event.key == pygame.K_UP:
-                    player_rect.top -= step
-                if event.key == pygame.K_DOWN:
-                    player_rect.bottom += step
+            move_with_arrows(event)
+        
         if game_state ==1:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_BACKSPACE:
@@ -44,6 +38,8 @@ while run:
         screen.blit(banner_surf,banner_rect)
         banner_move2()
         screen.blit(player_surf,player_rect)
+
+        pygame.draw.line(background, (255,255,0), (0,0), (1440,900),8)
 
         if player_rect.colliderect(banner_rect):
             print('collision')

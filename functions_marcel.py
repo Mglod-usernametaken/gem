@@ -31,6 +31,8 @@ text_surf = base_font.render(user_text,True,(255,0,255))
 text_rect = text_surf.get_rect(center = (720,750))
 game_state = 0
 
+step = 16
+
 
 def playmovie(video_path):
     movie = moviepy.editor.VideoFileClip(video_path)
@@ -40,4 +42,15 @@ def banner_move2():
     banner_rect.top -=1
     if banner_rect.top <= -200:
         banner_rect.top = 900
+
+def move_with_arrows (event):
+    if event.type == pygame.KEYDOWN:
+        if event.key == pygame.K_LEFT :
+            player_rect.left -= step
+        if event.key == pygame.K_RIGHT :
+            player_rect.right += step
+        if event.key == pygame.K_UP :
+            player_rect.top -= step
+        if event.key == pygame.K_DOWN :
+            player_rect.bottom += step
 
